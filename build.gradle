@@ -30,6 +30,7 @@ tasks.named('test') {
 }
 
 test {
+	jvmArgs "-javaagent:/Users/andre/src/obliviousnetwork/streaming-error-demo/jSSLKeyLog-java24+.jar=logfile"
     testLogging {
         outputs.upToDateWhen {false}
         showStandardStreams = true
